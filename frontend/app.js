@@ -1,5 +1,5 @@
 // Change this if your backend runs on a different host/port
-const API_URL = "http://127.0.0.1:8000/predict";
+const API_URL = "https://crop-disease-app-2n2h.onrender.com/predict";
 
 const form = document.getElementById("predict-form");
 const fileInput = document.getElementById("file");
