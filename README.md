@@ -2,6 +2,8 @@
 
 A full-stack app that serves 4 trained CNN models (chilli, finger millet/ragi,
 rice, sugarcane) behind a FastAPI backend, with a simple HTML/JS frontend.
+# Live Demo
+ https://crop-disease-app-1-9ytq.onrender.com
 
 ## Project structure
 ```
