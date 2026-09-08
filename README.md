@@ -67,10 +67,3 @@ browser — it will still work since it calls the backend via `fetch`.)
 Select a crop, upload a leaf image, click Predict. You should see the
 predicted disease class and confidence score.
 
-## Next steps (to make this resume-stronger)
-- Deploy the backend (Render, Railway, or Fly.io free tier) and the frontend
-  (Netlify, Vercel, or GitHub Pages) so you have a live public link.
-- Add a crop auto-detector (a 5th model) so users don't need to pick the
-  crop manually.
-- Add basic input validation (reject non-leaf images, check file size).
-- Add a `Dockerfile` for the backend for easier deployment.
