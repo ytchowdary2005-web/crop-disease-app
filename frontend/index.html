@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crop Disease Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌾 Crop Disease Detector</h1>
+    <p class="subtitle">Upload a leaf photo and select the crop to detect disease.</p>
+
+    <form id="predict-form">
+      <label for="crop">Select Crop</label>
+      <select id="crop" name="crop" required>
+        <option value="">-- Choose a crop --</option>
+        <option value="chilli">Chilli</option>
+        <option value="finger_millet">Finger Millet (Ragi)</option>
+        <option value="rice">Rice</option>
+        <option value="sugarcane">Sugarcane</option>
+      </select>
+
+      <label for="file">Upload Leaf Image</label>
+      <input type="file" id="file" name="file" accept="image/*" required />
+
+      <img id="preview" src="" alt="" style="display:none;" />
+
+      <button type="submit" id="submit-btn">Predict</button>
+    </form>
+
+    <div id="result" class="result" style="display:none;">
+      <h2>Result</h2>
+      <p><strong>Predicted disease:</strong> <span id="predicted-class"></span></p>
+      <p><strong>Confidence:</strong> <span id="confidence"></span>%</p>
+      <div id="all-probs"></div>
+    </div>
+
+    <p id="error" class="error" style="display:none;"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
